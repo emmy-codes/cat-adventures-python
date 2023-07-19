@@ -8,13 +8,12 @@ I really wanted to make a text based game for this project, being old enough to 
 
 ## CONTENTS
 
-* [User Experience](#user-experience-ux)
-  * [User Stories](#user-stories)
+* [User Stories](#user-stories)
+   * [MVP](#mvp)
+   * [Add-ons](#add-ons)
 
 * [Design](#design)
   * [Flowchart](#flowchart)
-
-* [Future Implementations](#future-implementations)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -35,24 +34,25 @@ I really wanted to make a text based game for this project, being old enough to 
 
 - - -
 
-## User Experience (UX)
+## User Stories
 
-### User Stories
+#### MVP
 
-#### First Time Visitor Goals
+The users should to be able to:
 
-* I want to take part in a pub quiz online and improve my general knowledge. I want to be able to play at any time, anywhere.
-* I want the site to be responsive to my device.
-* I want the site to be easy to navigate.
+* Start the game when typing "Start".
+* Not have to worry about capitalizing or lower case when typing.
+* Receive the next part in the story depending on the input choices.
+* Reach the end of the game through one of the paths chosen, by either succeeding or failing in the quest.
 
-#### Returning Visitor Goals
+#### Add-ons
 
-* I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site.
+After the essentials are covered I would like the user to be able to:
 
-#### Frequent Visitor Goals
-
-* I want to be able to adjust the difficulty level to keep improving my knowledge.
-* I want to be able to log my high scores to see how I am performing.
+* Have more options/alternate endings to the game.
+* Have in-game items to interact with.
+* Print out the choices made onto a Google doc/sheet (so the user can see which choices they took and choose differently next time((but really just to show that I understand how to populate input data to a sheet))).
+* Enjoy a more visually exciting experience by adding some styling and imagery/ascii.
 
 - - -
 
@@ -65,15 +65,6 @@ The design is structural in nature as opposed to visual, as although I know the 
 Since the game changes depending on the users' choices, I wanted to lay out the step by step logic needed to reach each ending of the game. Although there are only two outcomes there are multiple ways to get there.
 
 ![rsz_11blank_diagram](https://github.com/emmy-codes/python-text-game/assets/70635859/23e3c5e3-951d-4083-af31-c40eeb56e421)
-
-## Future Implementations
-
-In future implementations I would like to:
-
-* Add further functionality such as:
-  - More options/alternate endings.
-  - In game items to interact with.
-* Styling the game to provide a more visually exciting experience for the user. 
 
 - - -
 
