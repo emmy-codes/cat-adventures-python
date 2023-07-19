@@ -30,7 +30,7 @@ print(
     """
 )
 
-""" 
+"""
 Step 2 options 1 and 2:
 Ask the turtle for guidance (go to Step 4)
 Continue without the turtle's help (go to Step 5)
@@ -47,7 +47,7 @@ print(
     """
 )
 
-""" 
+"""
 Step 3 options 1 and 2:
 Trust the squirrel and follow its directions (go to Step 6)
 Doubt the squirrel and find their own way (go to Step 7)
@@ -104,7 +104,7 @@ A secluded spot beneath a willow tree (go to Step 13)
 print(
     """
     Meowshmallow and Peppurrmint decide not to trust the squirrel and forge
-    their own path. Eventually, they stumble upon a lake. They notice two 
+    their own path. Eventually, they stumble upon a lake. They notice two
     different spots they could possibly catch the fish from:
     """
 )
@@ -123,7 +123,7 @@ print(
 )
 
 ENDING_1 = """
-Success: Meowshmallow and Peppurrmint return home with the golden fish. 
+Success: Meowshmallow and Peppurrmint return home with the golden fish.
 True to the legend, it provides them with an endless supply of food, and they
 live happily ever after.
 """
