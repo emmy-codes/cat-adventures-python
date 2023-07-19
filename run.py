@@ -2,30 +2,9 @@
     Some pseudo code to plan my game comments start with psd
 """
 
-'''game_text = [
-    {
-        "step_text": """    
-    Our furry-tail begins in a small village with two curious cats named
-    Meowshmallow and Peppurrmint who heard tales of the legendary golden fish.
-    This magical fish was said to provide an endless supply of food
-    to whomever caught it. Intrigued by the story,
-    Meowshmallow and Peppurrmint decide to embark on an adventure
-    to find this elusive fish.
-    As they set out on their journey, they come across two possible paths:""",
-        "options": [
-            "Do they follow the river upstream?",
-            "or do they venture into the dense forest?"
-        ]
-    }
-]'''
-
-# practice code:
-
-def show_page():
-    """
-        description about function
-    """
-    page_text = """Our furry-tail begins in a small village with two curious cats named
+game_text = {
+        "page_1": {
+            "page_text": """Our furry-tail begins in a small village with two curious cats named
     Meowshmallow and Peppurrmint who heard tales of the legendary golden fish.
     This magical fish was said to provide an endless supply of food
     to whomever caught it. Intrigued by the story,
@@ -33,15 +12,31 @@ def show_page():
     to find this elusive fish.
     As they set out on their journey, they come across two possible paths:
     Option 1: Do they follow the river upstream?
-    Option 2: Or do they venture into the dense forest?"""
-    print(page_text)
+    Option 2: Or do they venture into the dense forest?""",
+            "option_1": "page_2", 
+            "option_2": "page_3"
+        },
+        "page_2": {
+            "page_text": """awioehoauiughdoigha doiafhasoifh asofi hasoifh """,
+            "option_1": "page_2", 
+            "option_2": "page_3"
+        }
+    }
+
+# practice code:
+
+def show_page(page):
+    """
+        description about function
+    """
+    print(page["page_text"])
     user_input = input("""Write your choice (either 1 or 2):""")
-    if user_input == 1:
-        print("They follow the river (and go to step 2)")
+    if user_input == "1":
+        show_page(game_text[page["option_1"]])
     else:
         print("They go into the forest (and go to step 3)")
 
-show_page()
+show_page(game_text["page_1"])
 
 
 
