@@ -1,5 +1,12 @@
+"""
+    Some pseudo code to plan my game comments start with psd
+"""
+
+
 # follow the story of Meowshmallow and Peppurrmint!
 
+# psd: add intro text to const
+# psd: print const to terminal
 print(
     """
     Our furry-tail begins in a small village with two curious cats named
@@ -11,6 +18,12 @@ print(
     As they set out on their journey, they come across two possible paths:
     """
 )
+
+# psd: add option 1 and 2 to consts
+# psd: offer user input to choose one option and write it to the text box
+# psd: if user picks option 1, go to step 2
+# psd: elif user picks option 2, go to step 3
+# psd: else, print error message and offer user to try again
 
 """
 Step 1 options 1 and 2:
