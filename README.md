@@ -1,9 +1,8 @@
 
-# The Quiz Arms
+# The adventures of Meowshmallow and Peppurrmint
 
-![The Quiz Arms shown on a variety of screen sizes](assets/images/the-quiz-arms.png)
 
-Visit the deployed site: [The Quiz Arms](https://kera-cudmore.github.io/TheQuizArms/)
+Visit the deployed site: 
 
 Test your general knowledge and get pub quiz ready!
 
