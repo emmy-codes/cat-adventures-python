@@ -20,6 +20,7 @@ I really wanted to make a text based game for this project, being old enough to 
   * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 * [Deployment & Local Development](#deployment--local-development)
+  * [Iteration over starting code](#iteration-over-starting-code)
   * [Deployment](#deployment)
   * [Local Development](#local-development)
     * [How to Fork](#how-to-fork)
@@ -80,6 +81,24 @@ Python
 - - -
 
 ## Deployment & Local Development
+
+#### Iteration over starting code
+
+Coming from a background that is more familiar with JavaScript, I found it challenging to try to remember the Python semantics. For my  first function I tried writing some pseudo code purely to see what I wanted my function to do (show text, take input etc). This helped me to visualise what I needed to write:
+
+![pseudo_code_trial](https://github.com/emmy-codes/python-text-game/assets/70635859/07d3ba22-4451-40b9-8b75-8e5dc6c98bec)
+
+I then trialled a short JS array and a function and practiced the difference between hard coding which property will be shown (in this case, game.name is hard coded and thus the result will always show the name property from the array). The second console log is programmatically calling whatever _value_ the property from inside the game array has, and thus is interchangable.
+
+![js-logic](https://github.com/emmy-codes/python-text-game/assets/70635859/5723c4dd-1c9c-4daa-a5de-736e3a3ef72e)
+
+"But this is Python, Emma" I hear you inwardly sigh to yourself. "Get to the point!" So here it is: I _then_ moved on to try and create the basics of the Python function using only string data. Again, assigning the strings is the first step for me to be able to see how to later change them to a more DRY method of function writing, since it is clearer what each part of the code does thanks to the text visualization.
+
+Here is the commit from my trialling the function:
+
+![practice-fn-python](https://github.com/emmy-codes/python-text-game/assets/70635859/0acf0b49-b2b2-4fa1-87b1-dc87483b6d7f)
+
+This process of iteration worked best for my brain to see what steps I need to take, and solidify my understanding of not passing immutable data
 
 ### Deployment
 
