@@ -198,8 +198,10 @@ Are you ready to start the game?""")
     if game_time == "1":
         show_step(game_text["step_1"])
     elif game_time == "2":
-        print("Are you sure? Let's take the kitties on an adventure!")
-        start_game()
+        while game_time is not "1":
+            print("Are you sure? Let's take the kitties on an adventure!")
+            game_time = input("Type 1 for yes, or 2 for no: ")
+        show_step(game_text["step_1"])
     else:
         print("""
 That's not a valid command,
