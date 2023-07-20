@@ -231,8 +231,9 @@ def show_step(step):
         else:
             print(step["step_text"], ENDING_2)
             restart_game()
-    else:
-        print(step["step_text"])
+        return # exit out of the show_step fn
+
+    print(step["step_text"])
     user_input = input("Write your choice (either 1 or 2): ")
 
     if user_input == "1":
