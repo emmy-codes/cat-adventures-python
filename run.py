@@ -3,8 +3,9 @@
 """
 
 game_text = {
-        "page_1": {
-            "page_text": """Our furry-tail begins in a small village with two curious cats named
+        "step_1": {
+            "step_text": """
+    Our furry-tail begins in a small village with two curious cats named
     Meowshmallow and Peppurrmint who heard tales of the legendary golden fish.
     This magical fish was said to provide an endless supply of food
     to whomever caught it. Intrigued by the story,
@@ -13,30 +14,29 @@ game_text = {
     As they set out on their journey, they come across two possible paths:
     Option 1: Do they follow the river upstream?
     Option 2: Or do they venture into the dense forest?""",
-            "option_1": "page_2", 
-            "option_2": "page_3"
+            "option_1": "step_2", 
+            "option_2": "step_3"
         },
-        "page_2": {
-            "page_text": """awioehoauiughdoigha doiafhasoifh asofi hasoifh """,
-            "option_1": "page_2", 
-            "option_2": "page_3"
+        "step_2": {
+            "step_text": """awioehoauiughdoigha doiafhasoifh asofi hasoifh """,
+            "option_1": "step_2", 
+            "option_2": "step_3"
         }
     }
 
-# practice code:
-
-def show_page(page):
+def show_step(step):
     """
-        description about function
+        Initial function to show step 1 with options and receive input from
+        the user. Depending on the input, there will be different outcomes.
     """
-    print(page["page_text"])
+    print(step["step_text"])
     user_input = input("""Write your choice (either 1 or 2):""")
     if user_input == "1":
-        show_page(game_text[page["option_1"]])
+        show_step(game_text[step["option_1"]])
     else:
         print("They go into the forest (and go to step 3)")
 
-show_page(game_text["page_1"])
+show_step(game_text["step_1"])
 
 
 
