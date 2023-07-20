@@ -4,7 +4,8 @@
 
 game_text = {
         "step_1": {
-            "step_text": """
+            "step_text":
+    """
     Our furry-tail begins in a small village with two curious cats named
     Meowshmallow and Peppurrmint who heard tales of the legendary golden fish.
     This magical fish was said to provide an endless supply of food
@@ -13,14 +14,49 @@ game_text = {
     to find this elusive fish.
     As they set out on their journey, they come across two possible paths:
     Option 1: Do they follow the river upstream?
-    Option 2: Or do they venture into the dense forest?""",
+    Option 2: Or do they venture into the dense forest?
+    """,
             "option_1": "step_2", 
             "option_2": "step_3"
         },
         "step_2": {
-            "step_text": """awioehoauiughdoigha doiafhasoifh asofi hasoifh """,
-            "option_1": "step_2", 
-            "option_2": "step_3"
+            "step_text": 
+    """
+    Meowshmallow and Peppurrmint follow the river upstream,
+    hoping it would lead them to the golden fish. Along the way,
+    they discover a wise old turtle who offers them advice.
+    The turtle says to them: 'The golden fish lives in a hidden lake,
+    but the path is treacherous. You must choose wisely.'
+    Option 1: Do they ask the turtle for guidance?
+    Option 2: Or do they continue without the turtle's help?
+    """,
+            "option_1": "step_4", 
+            "option_2": "step_5"
+        },
+        "step_3": {
+            "step_text":
+    """
+    Meowshmallow and Peppurrmint venture into the dense forest,
+    relying on their keen senses to guide them.
+    Soon, they stumble upon a chatty squirrel who claims to know
+    the whereabouts of the golden fish.
+    Option 1: Do they trust the squirrel and follow its directions?
+    Option 2: Or do they doubt the squirrel and find their own way?
+    """,
+            "option_1": "step_6",
+            "option_2": "step_7"
+        },
+        "step_4": {
+            "step_text":
+    """
+    With the turtle's guidance, Meowshmallow and Peppurrmint manage
+    to find the hidden lake. As they approache, they notice two different
+    spots they could possibly catch the fish from:
+    Option 1: Do they pick the open spot near the water's edge?
+    Option 2: Or do they pick the secluded spot beneath the willow tree?
+    """,
+            "option_1": "step_8",
+            "option_2": "step_9"
         }
     }
 
@@ -37,87 +73,6 @@ def show_step(step):
         print("They go into the forest (and go to step 3)")
 
 show_step(game_text["step_1"])
-
-
-
-# follow the story of Meowshmallow and Peppurrmint!
-
-# psd: add intro text to const
-# psd: print const to terminal
-'''print(
-    """
-    Our furry-tail begins in a small village with two curious cats named
-    Meowshmallow and Peppurrmint who heard tales of the legendary golden fish.
-    This magical fish was said to provide an endless supply of food
-    to whomever caught it. Intrigued by the story,
-    Meowshmallow and Peppurrmint decide to embark on an adventure
-    to find this elusive fish.
-    As they set out on their journey, they come across two possible paths:
-    """
-)'''
-
-# psd: add option 1 and 2 to consts
-# psd: offer user input to choose one option and write it to the text box
-# psd: if user picks option 1, go to step 2
-# psd: elif user picks option 2, go to step 3
-# psd: else, print error message and offer user to try again
-
-"""
-Step 1 options 1 and 2:
-Follow the river upstream (go to Step 2)
-Venture into the dense forest (go to Step 3)
-"""
-
-# Step 2:
-
-'''print(
-    """
-    Meowshmallow and Peppurrmint follow the river upstream,
-    hoping it would lead them to the golden fish. Along the way,
-    they discover a wise old turtle who offers them advice.
-    The turtle says to them: 'The golden fish lives in a hidden lake,
-    but the path is treacherous. You must choose wisely.'
-    """
-)'''
-
-"""
-Step 2 options 1 and 2:
-Ask the turtle for guidance (go to Step 4)
-Continue without the turtle's help (go to Step 5)
-"""
-
-# Step 3:
-
-'''print(
-    """
-    Meowshmallow and Peppurrmint venture into the dense forest,
-    relying on their keen senses to guide them.
-    Soon, they stumble upon a chatty squirrel who claims to know
-    the whereabouts of the golden fish.
-    """
-)'''
-
-"""
-Step 3 options 1 and 2:
-Trust the squirrel and follow its directions (go to Step 6)
-Doubt the squirrel and find their own way (go to Step 7)
-"""
-
-# Step 4 with guidance:
-
-'''print(
-    """
-    With the turtle's guidance, Meowshmallow and Peppurrmint manage
-    to find the hidden lake. As they approache, they notice two different
-    spots they could possibly catch the fish from:
-    """
-)'''
-
-"""
-Step 4 options 1 and 2:
-An open spot near the water's edge (go to Step 8)
-A secluded spot beneath a willow tree (go to Step 9)
-"""
 
 # Step 5 no guidance:
 
