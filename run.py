@@ -9,9 +9,8 @@ game_text = {
     Our furry-tail begins in a small village with two curious cats named
     Meowshmallow and Peppurrmint who heard tales of the legendary golden fish.
     This magical fish was said to provide an endless supply of food
-    to whomever caught it. Intrigued by the story,
-    Meowshmallow and Peppurrmint decide to embark on an adventure
-    to find this elusive fish.
+    to whomever caught it. Intrigued by the story, they decide to embark 
+    on an adventure to find this elusive fish.\n
     As they set out on their journey, they come across two possible paths:
     Option 1: Do they follow the river upstream?
     Option 2: Or do they venture into the dense forest?
@@ -27,7 +26,7 @@ game_text = {
     hoping it would lead them to the golden fish. Along the way,
     they discover a wise old turtle who offers them advice.
     The turtle says to them: 'The golden fish lives in a hidden lake,
-    but the path is treacherous. You must choose wisely.'
+    but the path is treacherous. You must choose wisely.'\n
     Option 1: Do they ask the turtle for guidance?
     Option 2: Or do they continue without the turtle's help?
     """,
@@ -41,7 +40,7 @@ game_text = {
     Meowshmallow and Peppurrmint venture into the dense forest,
     relying on their keen senses to guide them.
     Soon, they stumble upon a chatty squirrel who claims to know
-    the whereabouts of the golden fish.
+    the whereabouts of the golden fish.\n
     Option 1: Do they trust the squirrel and follow its directions?
     Option 2: Or do they doubt the squirrel and find their own way?
     """,
@@ -54,7 +53,7 @@ game_text = {
     """
     With the turtle's guidance, Meowshmallow and Peppurrmint manage
     to find the hidden lake. As they approache, they notice two different
-    spots they could possibly catch the fish from:
+    spots they could possibly catch the fish from:\n
     Option 1: Do they pick the open spot near the water's edge?
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
@@ -67,7 +66,7 @@ game_text = {
     """
     Meowshmallow and Peppurrmint continue their journey without
     the turtle's help. They soon find a lake that seems promising.
-    They notice two different spots they could possibly catch the fish from:
+    They notice two different spots they could possibly catch the fish from:\n
     Option 1: Do they pick the open spot near the water's edge?
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
@@ -79,7 +78,7 @@ game_text = {
             "step_text":
     """
     Trusting the squirrel's directions, Meowshmallow and Peppurrmint arrive
-    at the hidden lake. Looking around, they see two possible fishing spots:
+    at the hidden lake. Looking around, they see two possible fishing spots:\n
     Option 1: Do they pick the open spot near the water's edge?
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
@@ -92,7 +91,7 @@ game_text = {
     """
     Meowshmallow and Peppurrmint decide not to trust the squirrel and forge
     their own path. Eventually, they stumble upon a lake. They notice two
-    different spots they could possibly catch the fish from:
+    different spots they could possibly catch the fish from:\n
     Option 1: Do they pick the open spot near the water's edge?
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
@@ -174,14 +173,12 @@ game_text = {
         }
     }
 
-
 # End text for success
 ENDING_1 = """
 Meowshmallow and Peppurrmint return home with the golden fish.
 True to the legend, it provides them with an endless supply of food, and they
 live happily ever after.
 """
-
 # End text for failure
 ENDING_2 = """
 Despite their best efforts, Meowshmallow and Peppurrmint never find
@@ -189,6 +186,24 @@ the golden fish. They return to the farm, but the legend of the golden fish
 live on in their hearts.
 """
 
+def start_game():
+    """
+        Game start options
+    """
+    print("""
+Welcome to the adventures of Meowshmallow and Peppurrmint,
+two very curious cats that are on a mission!\n
+Are you ready to start the game?""")
+    game_time = input("Type 1 for yes, or 2 for no: ")
+    if game_time == "1":
+        show_step(game_text["step_1"])
+    elif game_time == "2":
+        print("Are you sure? Let's take the kitties on an adventure!")
+        start_game()
+    else:
+        print("""
+That's not a valid command,
+please enter number 1 or 2 to continue""")
 
 def show_step(step):
     """
@@ -202,7 +217,7 @@ def show_step(step):
             print(step["step_text"], ENDING_2)
     else:
         print(step["step_text"])
-    user_input = input("""Write your choice (either 1 or 2):""")
+    user_input = input("Write your choice (either 1 or 2): ")
 
     if user_input == "1":
         show_step(game_text[step["option_1"]])
@@ -211,5 +226,7 @@ def show_step(step):
     else:
         print("The cats look around, wondering what to do next")
 
-
+start_game()
+"""
 show_step(game_text["step_1"])
+"""
