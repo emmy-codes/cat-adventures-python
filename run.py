@@ -17,7 +17,8 @@ game_text = {
     Option 2: Or do they venture into the dense forest?
     """,
             "option_1": "step_2", 
-            "option_2": "step_3"
+            "option_2": "step_3",
+            "end_game": False
         },
         "step_2": {
             "step_text": 
@@ -31,7 +32,8 @@ game_text = {
     Option 2: Or do they continue without the turtle's help?
     """,
             "option_1": "step_4", 
-            "option_2": "step_5"
+            "option_2": "step_5",
+            "end_game": False
         },
         "step_3": {
             "step_text":
@@ -44,7 +46,8 @@ game_text = {
     Option 2: Or do they doubt the squirrel and find their own way?
     """,
             "option_1": "step_6",
-            "option_2": "step_7"
+            "option_2": "step_7",
+            "end_game": False
         },
         "step_4": {
             "step_text":
@@ -56,7 +59,8 @@ game_text = {
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
             "option_1": "step_8",
-            "option_2": "step_9"
+            "option_2": "step_9",
+            "end_game": False
         },
         "step_5": {
             "step_text":
@@ -68,7 +72,8 @@ game_text = {
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
             "option_1": "step_10",
-            "option_2": "step_11"
+            "option_2": "step_11",
+            "end_game": False
         },
         "step_6": {
             "step_text":
@@ -79,7 +84,8 @@ game_text = {
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
             "option_1": "step_12",
-            "option_2": "step_13"
+            "option_2": "step_13",
+            "end_game": False
         },
         "step_7": {
             "step_text":
@@ -91,91 +97,119 @@ game_text = {
     Option 2: Or do they pick the secluded spot beneath the willow tree?
     """,
             "option_1": "step_14",
-            "option_2": "step_15"
+            "option_2": "step_15",
+            "end_game": False
         },
         "step_8": {
             "step_text":
     """
     Choosing the open spot with the guidance of the turtle, 
     Meowshmallow and Peppurrmint catch the golden fish!
-    """
+    """,
+            "end_game": True,
+            "success": True
         },
         "step_9": {
             "step_text":
     """
     Choosing the secluded spot, despite the turtle's guidance, leads to no
     sign of the golden fish.
-    """
+    """,
+            "end_game": True,
+            "success": False
         },
         "step_10":{
             "step_text":
     """
     Choosing the open spot without the turtle's guidance turned out to be a misstep,
     they find no sign of the golden fish.
-    """
+    """,
+            "end_game": True,
+            "success": False
         },
         "step_11": {
             "step_text":
     """
     Choosing the secluded spot without the turtle's guidance turned out to be the right
     choice! They found and caught the golden fish!
-    """
+    """,
+            "end_game": True,
+            "success": True
         },
         "step_12": {
             "step_text":
     """
     Choosing the open spot with the squirrel's guidance, 
     they caught the golden fish!
-    """
+    """,
+            "end_game": True,
+            "success": True
         },
         "step_13": {
             "step_text":
     """
     Choosing the secluded spot, despite the squirrel's guidance, led to no
     sign of the golden fish.
-    """
+    """,
+            "end_game": True,
+            "success": False
         },
         "step_14": {
             "step_text":
     """
     Choosing the open spot without the squirrel's guidance led to no sign of
     the golden fish.
-    """
+    """,
+            "end_game": True,
+            "success": False
         },
         "step_15": {
             "step_text": 
     """
     Choosing the secluded spot without the squirrel's guidance turned out to
     be the right choice! They found and caught the golden fish.
-    """
+    """,
+            "end_game": True,
+            "success": True
         }
     }
-
-def show_step(step):
-    """
-        Initial function to show step 1 with options and receive input from
-        the user. Depending on the input, there will be different outcomes.
-    """
-    print(step["step_text"])
-    user_input = input("""Write your choice (either 1 or 2):""")
-    if user_input == "1":
-        show_step(game_text[step["option_1"]])
-    else:
-        print("They go into the forest (and go to step 3)")
-
-show_step(game_text["step_1"])
 
 
 # End text for success
 ENDING_1 = """
-Success: Meowshmallow and Peppurrmint return home with the golden fish.
+Meowshmallow and Peppurrmint return home with the golden fish.
 True to the legend, it provides them with an endless supply of food, and they
 live happily ever after.
 """
 
 # End text for failure
 ENDING_2 = """
-Failure: Despite their best efforts, Meowshmallow and Peppurrmint never find
+Despite their best efforts, Meowshmallow and Peppurrmint never find
 the golden fish. They return to the farm, but the legend of the golden fish
 live on in their hearts.
 """
+
+
+def show_step(step):
+    """
+        Initial function to show step 1 with options and receive input from
+        the user. Depending on the input, there will be different outcomes.
+    """
+    if step["end_game"]:
+        if step["success"]:
+            print(step["step_text"], ENDING_1)
+        else:
+            print(step["step_text"], ENDING_2)
+    else:
+        print(step["step_text"])
+    user_input = input("""Write your choice (either 1 or 2):""")
+
+    if user_input == "1":
+        show_step(game_text[step["option_1"]])
+    elif user_input == "2":
+        show_step(game_text[step["option_2"]])
+    else:
+        print("The cats look around, wondering what to do next")
+
+
+show_step(game_text["step_1"])
