@@ -27,6 +27,7 @@ I really wanted to make a text based game for this project, being old enough to 
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+* [Bug Fixes](#bug-fixes)
   
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -116,6 +117,10 @@ This process of iteration worked best for my brain to see what steps I need to t
 ## Testing
 
 Please refer to [TESTING.md]() file for all testing carried out.
+
+## Bug Fixes
+
+So far the majority of issues in my code have been my not completing the logic adequately. For example, when I created the start_game function I added the usual input requests and set an else to print an error message requesting the user input 1 or 2 to continue, but did not set the game to run again. I solved this by offering the input field again after printing a message to the user.
 
 - - -
 
