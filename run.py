@@ -121,8 +121,8 @@ game_text = {
         "step_10":{
             "step_text":
     """
-    Choosing the open spot without the turtle's guidance turned out to be a misstep,
-    they find no sign of the golden fish.
+    Choosing the open spot without the turtle's guidance turned out to be a 
+    misstep, as they find no sign of the golden fish.
     """,
             "end_game": True,
             "success": False
