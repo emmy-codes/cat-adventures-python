@@ -102,6 +102,8 @@ Please refer to [TESTING.md]() file for all testing carried out.
 
 ## Credits
 
+To my classmate [Ben](https://github.com/caketaster/PP3--CYOA/blob/main/run.py) who shared his code for review on Slack, and upon reading it gave me the idea to use just number 1 or 2 as input to help simplify and speed up my MVP.
+
 ### Code Used
 
 ### Content
