@@ -205,6 +205,18 @@ Are you ready to start the game?""")
 That's not a valid command,
 please enter number 1 or 2 to continue""")
 
+
+def restart_game():
+    """
+        Regardless of success or failure, offer the user an
+        option to restart the game
+    """
+    restart = input("Would you like to play again? 1 for yes, 2 for no: ")
+    if restart == "1":
+        start_game()
+    elif restart == "2":
+        print("Thank mew for playing! =^_^=")
+
 def show_step(step):
     """
         Initial function to show step 1 with options and receive input from
@@ -213,8 +225,10 @@ def show_step(step):
     if step["end_game"]:
         if step["success"]:
             print(step["step_text"], ENDING_1)
+            restart_game()
         else:
             print(step["step_text"], ENDING_2)
+            restart_game()
     else:
         print(step["step_text"])
     user_input = input("Write your choice (either 1 or 2): ")
