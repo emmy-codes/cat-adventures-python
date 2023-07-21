@@ -5,7 +5,7 @@
 game_text = {
         "step_1": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Our furry-tail begins in a small village with two curious cats named       $
 $ Meowshmallow and Peppurrmint who heard tales of a legendary golden fish.   $
@@ -17,13 +17,13 @@ $ As they set out on their journey, they come across two possible paths:     $
 $ Option 1: Do they follow the river upstream?                               $
 $ Option 2: Or do they venture into the dense forest?                        $
 """,
-            "option_1": "step_2", 
+            "option_1": "step_2",
             "option_2": "step_3",
             "end_game": False
         },
         "step_2": {
-            "step_text": 
-"""
+            "step_text":
+                """
 $ -------------------------------------------------------------------------- $
 $ Meowshmallow and Peppurrmint follow the river upstream,                    $
 $ hoping it would lead them to the golden fish. Along the way,               $
@@ -34,13 +34,13 @@ $ -------------------------------------------------------------------------- $
 $ Option 1: Do they ask the turtle for guidance?                             $
 $ Option 2: Or do they continue without the turtle's help?                   $
 """,
-            "option_1": "step_4", 
+            "option_1": "step_4",
             "option_2": "step_5",
             "end_game": False
         },
         "step_3": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Meowshmallow and Peppurrmint venture into the dense forest,                $
 $ relying on their keen senses to guide them.                                $
@@ -56,7 +56,7 @@ $ Option 2: Or do they doubt the squirrel and find their own way?            $
         },
         "step_4": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ With the turtle's guidance, Meowshmallow and Peppurrmint manage            $
 $ to find the hidden lake. As they approache, they notice two different      $
@@ -71,7 +71,7 @@ $ Option 2: Or do they pick the secluded spot beneath the willow tree?       $
         },
         "step_5": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Meowshmallow and Peppurrmint continue their journey without                $
 $ the turtle's help. They soon find a lake that seems promising.             $
@@ -86,7 +86,7 @@ $ Option 2: Or do they pick the secluded spot beneath the willow tree?       $
         },
         "step_6": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Trusting the squirrel's directions, Meowshmallow and Peppurrmint arrive    $
 $ at the hidden lake. Looking around, they see two possible fishing spots:   $
@@ -100,7 +100,7 @@ $ Option 2: Or do they pick the secluded spot beneath the willow tree?       $
         },
         "step_7": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Meowshmallow and Peppurrmint decide not to trust the squirrel and forge    $
 $ their own path. Eventually, they stumble upon a lake. They notice two      $
@@ -115,7 +115,7 @@ $ Option 2: Or do they pick the secluded spot beneath the willow tree?       $
         },
         "step_8": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the open spot with the guidance of the turtle,                    $
 $ Meowshmallow and Peppurrmint catch the golden fish!                        $
@@ -126,7 +126,7 @@ $ -------------------------------------------------------------------------- $
         },
         "step_9": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the secluded spot, despite the turtle's guidance, leads to no     $
 $ sign of the golden fish.                                                   $
@@ -135,9 +135,9 @@ $ -------------------------------------------------------------------------- $
             "end_game": True,
             "success": False
         },
-        "step_10":{
+        "step_10": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the open spot without the turtle's guidance turned out to be a    $
 $ misstep, as they find no sign of the golden fish.                          $
@@ -148,7 +148,7 @@ $ -------------------------------------------------------------------------- $
         },
         "step_11": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the secluded spot without the turtle's guidance turned out to be  $
 $ the right choice! They found and caught the golden fish!                   $
@@ -159,7 +159,7 @@ $ -------------------------------------------------------------------------- $
         },
         "step_12": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the open spot with the squirrel's guidance,                       $
 $ they caught the golden fish!                                               $
@@ -170,7 +170,7 @@ $ -------------------------------------------------------------------------- $
         },
         "step_13": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the secluded spot, despite the squirrel's guidance,               $
 $ led to no sign of the golden fish.                                         $
@@ -181,7 +181,7 @@ $ -------------------------------------------------------------------------- $
         },
         "step_14": {
             "step_text":
-"""
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the open spot without the squirrel's guidance                     $
 $ led to no sign of the golden fish.                                         $
@@ -191,8 +191,8 @@ $ -------------------------------------------------------------------------- $
             "success": False
         },
         "step_15": {
-            "step_text": 
-"""
+            "step_text":
+                """
 $ -------------------------------------------------------------------------- $
 $ Choosing the secluded spot without the squirrel's guidance turned out to   $
 $ be the right choice! They found and caught the golden fish.                $
@@ -220,6 +220,7 @@ $ of the golden fish live on in their hearts.                                $
 $ -------------------------------------------------------------------------- $
 """
 
+
 def start_game():
     """
         Game start options
@@ -232,8 +233,7 @@ $ -------------------------------------------------------------------------- $
 $                                                                            $
 $ Are you ready to start the game?                                           $
 $ -------------------------------------------------------------------------- $
-"""
-)
+""")
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
@@ -263,6 +263,7 @@ def restart_game():
     elif restart == "2":
         print("Thank mew for playing! =^_^=")
 
+
 def show_step(step):
     """
         Initial function to show step 1 with options and receive input from
@@ -275,7 +276,8 @@ def show_step(step):
         else:
             print(step["step_text"], ENDING_2)
             restart_game()
-        return # exit out of the show_step fn
+        return
+    # exit out of the show_step fn
 
     print(step["step_text"])
     user_input = input("Write your choice (either 1 or 2): ")
@@ -286,5 +288,6 @@ def show_step(step):
         show_step(game_text[step["option_2"]])
     else:
         print("The cats look around, wondering what to do next")
+
 
 start_game()
