@@ -14,6 +14,7 @@ I really wanted to make a text based game for this project, being old enough to 
 
 * [Design](#design)
   * [Flowchart](#flowchart)
+  * [Features](#features)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -68,16 +69,29 @@ Since the game changes depending on the users' choices, I wanted to lay out the 
 
 ![rsz_11blank_diagram](https://github.com/emmy-codes/python-text-game/assets/70635859/23e3c5e3-951d-4083-af31-c40eeb56e421)
 
+### Features
+
+![game-screenshot](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/3ed5b87f-e8a2-48e8-97e2-2db287d2d230)
+
+
+
 - - -
 
 ## Technologies Used
 
-### Languages Used
+### Language Used
 
 Python
 
 ### Frameworks, Libraries & Programs Used
 
+[Github](https://github.com/) - For online storage of code and deployment.
+
+[Picresize](https://picresize.com/) - Used to resize images for Readme/Testing docs.
+
+[VS Code](https://code.visualstudio.com/) - For writing my code.
+
+[Heroku](https://dashboard.heroku.com/apps) - For deploying my program.
 
 - - -
 
@@ -116,7 +130,7 @@ This process of iteration worked best for my brain to see what steps I need to t
 
 ## Testing
 
-Please refer to [TESTING.md]() file for all testing carried out.
+Please refer to [TESTING.md](https://github.com/emmy-codes/cat-adventures-python/blob/main/TESTING.md) file for all testing carried out.
 
 ## Bug Fixes
 
