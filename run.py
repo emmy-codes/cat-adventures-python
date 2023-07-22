@@ -227,7 +227,7 @@ def start_game():
     """
     print("""
 $ -------------------------------------------------------------------------- $
-$ Hello dear cat wrangler, to your feline text adventure!                 $
+$ Hello dear cat wrangler, to your feline text adventure!                    $
 $ And who might be guiding our furry protagonists on their quest today?      $
 $ -------------------------------------------------------------------------- $
 """)
