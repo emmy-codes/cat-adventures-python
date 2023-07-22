@@ -220,6 +220,22 @@ $ of the golden fish live on in their hearts.                                $
 $ -------------------------------------------------------------------------- $
 """
 
+'''def game_window():
+    """
+        stuff here
+    """
+    print("""
+$                                                                            $
+""")'''
+
+
+def get_user_name():
+    """
+        gets user input username
+    """
+    name = input("Name: ")
+    return name
+
 
 def start_game():
     """
@@ -231,14 +247,13 @@ $ Hello dear cat wrangler, to your feline text adventure!                    $
 $ And who might be guiding our furry protagonists on their quest today?      $
 $ -------------------------------------------------------------------------- $
 """)
-    name = input("Name: ")
-
+    name = get_user_name()
+#    game_window()
     print(f"""
 $ -------------------------------------------------------------------------- $
 $ Welcome, {name} to the adventures of Meowshmallow and Peppurrmint,         $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
-$                                                                            $
 $ Are you ready to start the game?                                           $
 $ -------------------------------------------------------------------------- $
 """)
