@@ -223,11 +223,19 @@ $ -------------------------------------------------------------------------- $
 
 def start_game():
     """
-        Game start options
+        starting the game
     """
     print("""
 $ -------------------------------------------------------------------------- $
-$ Welcome to the adventures of Meowshmallow and Peppurrmint,                 $
+$ Hello dear cat wrangler, to your feline text adventure!                 $
+$ And who might be guiding our furry protagonists on their quest today?      $
+$ -------------------------------------------------------------------------- $
+""")
+    name = input("Name: ")
+
+    print(f"""
+$ -------------------------------------------------------------------------- $
+$ Welcome, {name} to the adventures of Meowshmallow and Peppurrmint,         $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 $                                                                            $
