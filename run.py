@@ -228,30 +228,36 @@ def get_user_name():
     return name
 
 
-def calculate_user_name_length():
+def preserve_game_screen_size():
     """
-        checks the length of the name variable 
+        checks the length of the name variable and adjusts 
+        the game screen length
     """
+    game_screen_start = """
+$ Welcome, """
     name = get_user_name()
-    game_screen = f"""
-$ Welcome, {name}, to the adventures of Meowshmallow and Peppurrmint,        $
+    game_screen_end = """
+, to the adventures of Meowshmallow and Peppurrmint,                   $
 """
+    adjust_game_screen_end = game_screen_end[-(len(name))]
+
+    game_screen_with_name = game_screen_start + name + adjust_game_screen_end
+
     if len(name) < 6:
         print("placeholder text until other parameters are working")
     elif len(name) == 6:
         print(f"""
 $ -------------------------------------------------------------------------- $
-        {game_screen}
+        {game_screen_with_name}
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
 $ -------------------------------------------------------------------------- $
 """)
     elif len(name) > 6:
-        game_screen = game_screen[:1] + name + game_screen[-1:]
         print(f"""
 $ -------------------------------------------------------------------------- $
-        {game_screen()}
+        {game_screen_with_name}
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
@@ -261,7 +267,7 @@ $ -------------------------------------------------------------------------- $
         print("""Oh dear, your name seems to be a bit long! Do you have
 a shorter nickname you could try?""")
         get_user_name()
-    return calculate_user_name_length
+    return preserve_game_screen_size
 
 
 def start_game():
@@ -274,7 +280,7 @@ $ Hello dear cat wrangler, to your feline text adventure!                    $
 $ And who might be guiding our furry protagonists on their quest today?      $
 $ -------------------------------------------------------------------------- $
 """)
-    calculate_user_name_length()
+    preserve_game_screen_size()
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
