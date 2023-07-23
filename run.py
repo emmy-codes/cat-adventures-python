@@ -236,11 +236,14 @@ def preserve_game_screen_size():
     game_screen_start = """
 $ Welcome, """
     name = get_user_name()
-    game_screen_end = """
-, to the adventures of Meowshmallow and Peppurrmint,                   $
+    game_screen_end = """, to the adventures of                              $"""
+    game_screen_end += """
+$ Meowshmallow and Peppurrmint,                                              $
 """
-    adjust_game_screen_end = game_screen_end[-(len(name))]
-
+    calculating = 53 - len(name) + len(game_screen_start)
+    white_space = [" " for _ in range(calculating)]
+    adjust_game_screen_end = "".join(white_space)
+    adjust_game_screen_end += " $"
     game_screen_with_name = game_screen_start + name + adjust_game_screen_end
 
     if len(name) < 6:
@@ -254,7 +257,7 @@ $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
 $ -------------------------------------------------------------------------- $
 """)
-    elif len(name) > 6:
+    elif len(name) > 6 and len(name) <= 14:
         print(f"""
 $ -------------------------------------------------------------------------- $
         {game_screen_with_name}
@@ -263,7 +266,7 @@ $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
 $ -------------------------------------------------------------------------- $
 """)
-    elif name > 12:
+    elif len(name) > 14:
         print("""Oh dear, your name seems to be a bit long! Do you have
 a shorter nickname you could try?""")
         get_user_name()
