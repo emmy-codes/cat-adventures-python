@@ -136,6 +136,11 @@ Please refer to [TESTING.md](https://github.com/emmy-codes/cat-adventures-python
 
 So far the majority of issues in my code have been my not completing the logic adequately. For example, when I created the start_game function I added the usual input requests and set an else to print an error message requesting the user input 1 or 2 to continue, but did not set the game to run again. I solved this by offering the input field again after printing a message to the user.
 
+I had a huge challenge after adding a user input to my game due to having a "game window" with a $ on char 79. I was trying to put together an if statement to cover all name length eventualities without impacting the position of the final game window char. After many, many iterations my first breakthrough was getting the print to show the start of the game screen (game_screen_start) followed by the name that the user input.
+
+![error_solving_progress](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/1cad713f-5609-4eab-8c76-5886fd47e591)
+
+
 - - -
 
 ## Credits
