@@ -220,21 +220,48 @@ $ of the golden fish live on in their hearts.                                $
 $ -------------------------------------------------------------------------- $
 """
 
-'''def game_window():
-    """
-        stuff here
-    """
-    print("""
-$                                                                            $
-""")'''
-
-
 def get_user_name():
     """
         gets user input username
     """
     name = input("Name: ")
     return name
+
+
+def calculate_user_name_length():
+    """
+        checks the length of the name variable 
+    """
+    name = get_user_name()
+    game_screen = f"""
+$ Welcome, {name}, to the adventures of Meowshmallow and Peppurrmint,        $
+"""
+    if len(name) < 6:
+        print("placeholder text until other parameters are working")
+    elif len(name) == 6:
+        print(f"""
+$ -------------------------------------------------------------------------- $
+        {game_screen}
+$ two very curious cats that are on a mission!                               $
+$ -------------------------------------------------------------------------- $
+$ Are you ready to start the game?                                           $
+$ -------------------------------------------------------------------------- $
+""")
+    elif len(name) > 6:
+        game_screen = game_screen[:1] + name + game_screen[-1:]
+        print(f"""
+$ -------------------------------------------------------------------------- $
+        {game_screen()}
+$ two very curious cats that are on a mission!                               $
+$ -------------------------------------------------------------------------- $
+$ Are you ready to start the game?                                           $
+$ -------------------------------------------------------------------------- $
+""")
+    elif name > 12:
+        print("""Oh dear, your name seems to be a bit long! Do you have
+a shorter nickname you could try?""")
+        get_user_name()
+    return calculate_user_name_length
 
 
 def start_game():
@@ -247,16 +274,7 @@ $ Hello dear cat wrangler, to your feline text adventure!                    $
 $ And who might be guiding our furry protagonists on their quest today?      $
 $ -------------------------------------------------------------------------- $
 """)
-    name = get_user_name()
-#    game_window()
-    print(f"""
-$ -------------------------------------------------------------------------- $
-$ Welcome, {name} to the adventures of Meowshmallow and Peppurrmint,         $
-$ two very curious cats that are on a mission!                               $
-$ -------------------------------------------------------------------------- $
-$ Are you ready to start the game?                                           $
-$ -------------------------------------------------------------------------- $
-""")
+    calculate_user_name_length()
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
