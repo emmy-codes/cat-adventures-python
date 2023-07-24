@@ -250,10 +250,6 @@ def preserve_game_screen_size():
     game_screen_start = """
 $ Welcome, """
     name = get_user_name()
-    game_screen_end = ", to the adventures of                                $"
-    game_screen_end += """
-$ Meowshmallow and Peppurrmint,                                              $
-"""
     middle_text = ", to the adventures of"
     calculating = 77 - (len(name)+len(game_screen_start)+len(middle_text))
     white_space = [" " for _ in range(calculating)]
