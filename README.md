@@ -140,6 +140,13 @@ I had a huge challenge after adding a user input to my game due to having a "gam
 
 ![error_solving_progress](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/1cad713f-5609-4eab-8c76-5886fd47e591)
 
+The next iteration turned on its head: I was having too hard of a time removing spaces from the end of the string, so I decided to add space up to 77 characters and added the $ to the beginning and end.
+
+I checked the length of the name input, the length of the game screen start text, and the length of the middle text. I then deducted that length from the allowed length of 77. Or so I thought. Upon printing the alignment was completely off and I had way more white space than intended. To find out what went wrong, I printed the "calculating" variable which was over 100! I then printed "len(name)+len(game_screen_start)+len(middle_text))" and it returned around 53. The issue was _precedence_ . I had set the calculating variable to follow the code literally step by step, which was throwing the result off. 
+
+I solved the issue by adding an extra parentheses around the calculation in order to gather the total length of characters to print, which could then be deducted from the allotted 77 characters.
+
+![error_solving_step_3](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/a527a0a7-9861-435a-b244-42e746a8bf7f)
 
 - - -
 
