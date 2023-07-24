@@ -258,9 +258,7 @@ $ Welcome, """
     game_screen_with_name = f"""
 {game_screen_start}{name}{middle_text}{adjust_game_screen_end}"""
 
-    if len(name) < 6:
-        print("placeholder text until other parameters are working")
-    elif len(name) == 6:
+    if len(name) <= 32:
         print(f"""
 $ -------------------------------------------------------------------------- $
         {game_screen_with_name}
@@ -270,17 +268,7 @@ $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
 $ -------------------------------------------------------------------------- $
 """)
-    elif len(name) > 6 and len(name) <= 14:
-        print(f"""
-$ -------------------------------------------------------------------------- $
-        {game_screen_with_name}
-$ Meowshmallow and Peppurrmint,                                              $
-$ two very curious cats that are on a mission!                               $
-$ -------------------------------------------------------------------------- $
-$ Are you ready to start the game?                                           $
-$ -------------------------------------------------------------------------- $
-""")
-    elif len(name) > 14:
+    elif len(name) > 32:
         print("""Oh dear, your name seems to be a bit long! Do you have
 a shorter nickname you could try?""")
         get_user_name()
@@ -291,7 +279,7 @@ def start_game():
     """
         starting the game
     """
-    print(CAT_ASCII)
+    print(CAT_ASCII) # prints cat art to the top of the game screen
     print("""
 $ -------------------------------------------------------------------------- $
 $ Hello dear cat wrangler, to your feline text adventure!                    $
