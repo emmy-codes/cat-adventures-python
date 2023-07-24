@@ -236,7 +236,7 @@ $ -------------------------------------------------------------------------- $
 
 def get_user_name():
     """
-        gets user input username
+        Gets user input username
     """
     name = input("Name: ")
     return name
@@ -244,7 +244,7 @@ def get_user_name():
 
 def preserve_game_screen_size():
     """
-        checks the length of the name variable and adjusts
+        Checks the length of the name variable and adjusts
         the game screen length
     """
     game_screen_start = "$ Welcome, "
@@ -268,7 +268,7 @@ $ Meowshmallow and Peppurrmint,                                              $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 """)
-    elif len(name) > 32:
+    elif len(name) > 32:# If the users input is too long, ask them to do again
         print("""Oh dear, your name seems to be a bit long! Do you have
 a shorter nickname you could try?""")
         preserve_game_screen_size()
@@ -279,9 +279,11 @@ def start_game():
     """
         Starting the game, user is asked to input their name and then 
         the name is printed to the console. User is then asked to
-        start the game
+        start the game. If user inputs anything other than 1 or 2,
+        the code runs again asking for their name or if they're
+        ready to start the game
     """
-    print(CAT_ASCII) # prints cat art to the top of the game screen
+    print(CAT_ASCII) # Prints cat art to the top of the game screen
     print("""
 $ -------------------------------------------------------------------------- $
 $ Hello dear cat wrangler, to your feline text adventure!                    $
