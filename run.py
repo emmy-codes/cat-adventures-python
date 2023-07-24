@@ -304,7 +304,7 @@ $ -------------------------------------------------------------------------- $
         while True:
             print("""
 $ -------------------------------------------------------------------------- $
-$ Really? Don't you want to take the kitties on an adventure?                $
+$ The cats look around, wondering what to do next                            $
 $ -------------------------------------------------------------------------- $
 """)
             game_time = input("Type 1 for yes, or 2 for no: ")
@@ -345,8 +345,7 @@ def show_step(step):
         show_step(game_text[step["option_1"]])
     elif user_input == "2":
         show_step(game_text[step["option_2"]])
-    elif user_input not in ("1,2"):
-        print("The cats look around, wondering what to do next")
-
+    else:
+        show_step(step)
 
 start_game()
