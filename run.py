@@ -317,10 +317,10 @@ def restart_game():
         option to restart the game
     """
     restart = input("Would you like to play again? 1 for yes, 2 for no: ")
-    if restart == "1":
-        start_game()
-    elif restart == "2":
+    if restart == "2":
         print("Thank mew for playing! =^_^=")
+    elif restart == "1":
+        start_game()
 
 
 def show_step(step):
