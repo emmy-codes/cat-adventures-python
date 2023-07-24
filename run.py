@@ -341,11 +341,11 @@ def show_step(step):
     print(step["step_text"])
     user_input = input("Write your choice (either 1 or 2): ")
 
+    while user_input not in ("1", "2"):
+        user_input = input("Write your choice (either 1 or 2): ")
     if user_input == "1":
         show_step(game_text[step["option_1"]])
     elif user_input == "2":
         show_step(game_text[step["option_2"]])
-    else:
-        show_step(step)
 
 start_game()
