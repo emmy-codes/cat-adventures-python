@@ -268,7 +268,8 @@ $ Meowshmallow and Peppurrmint,                                              $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 """)
-    elif len(name) > 32:# If the users input is too long, ask them to do again
+    # If the users input is too long, ask them to try again
+    elif len(name) > 32:
         print("""Oh dear, your name seems to be a bit long! Do you have
 a shorter nickname you could try?""")
         preserve_game_screen_size()
@@ -299,16 +300,16 @@ $ -------------------------------------------------------------------------- $
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
-    elif game_time == "2":
-        while game_time != "1":
+    else:
+        while True:
             print("""
 $ -------------------------------------------------------------------------- $
 $ Really? Don't you want to take the kitties on an adventure?                $
 $ -------------------------------------------------------------------------- $
 """)
             game_time = input("Type 1 for yes, or 2 for no: ")
-        show_step(game_text["step_1"])
-
+            if game_time == "1":
+                show_step(game_text["step_1"])
 
 def restart_game():
     """
@@ -344,7 +345,7 @@ def show_step(step):
         show_step(game_text[step["option_1"]])
     elif user_input == "2":
         show_step(game_text[step["option_2"]])
-    else:
+    elif user_input not in ("1,2"):
         print("The cats look around, wondering what to do next")
 
 
