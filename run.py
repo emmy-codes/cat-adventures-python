@@ -247,18 +247,20 @@ def preserve_game_screen_size():
         checks the length of the name variable and adjusts
         the game screen length
     """
-    game_screen_start = """
-$ Welcome, """
+    game_screen_start = "$ Welcome, "
     name = get_user_name()
     middle_text = ", to the adventures of"
-    calculating = 77 - (len(name)+len(game_screen_start)+len(middle_text))
+    calculating = 76 - (len(name)+len(game_screen_start)+len(middle_text))
     white_space = [" " for _ in range(calculating)]
     adjust_game_screen_end = "".join(white_space)
     adjust_game_screen_end += " $"
     game_screen_with_name = f"""
 {game_screen_start}{name}{middle_text}{adjust_game_screen_end}"""
 
-    if len(name) <= 32:
+    if len(name) == 0:
+        print("Please tell us your name, brave hero!")
+        preserve_game_screen_size()
+    elif len(name) <= 32:
         print(f"""
 $ -------------------------------------------------------------------------- $
         {game_screen_with_name}
@@ -271,7 +273,7 @@ $ -------------------------------------------------------------------------- $
     elif len(name) > 32:
         print("""Oh dear, your name seems to be a bit long! Do you have
 a shorter nickname you could try?""")
-        get_user_name()
+        preserve_game_screen_size()
     return preserve_game_screen_size
 
 
