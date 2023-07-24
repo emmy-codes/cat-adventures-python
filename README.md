@@ -1,5 +1,7 @@
 # The adventures of Meowshmallow and Peppurrmint
 
+![catart](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/810854eb-1641-40e1-a9c4-bec9cb6cbcf2)
+
 Visit the deployed site: https://cat-adventures-05cb08857483.herokuapp.com/
 
 Follow Meowshmallow and Peppurrmint, two inquisitive cats on a quest for the fabled golden fish!
