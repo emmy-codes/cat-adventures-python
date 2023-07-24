@@ -310,6 +310,7 @@ $ -------------------------------------------------------------------------- $
             game_time = input("Type 1 for yes, or 2 for no: ")
             if game_time == "1":
                 show_step(game_text["step_1"])
+                break
 
 def restart_game():
     """
