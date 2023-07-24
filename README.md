@@ -1,5 +1,7 @@
 # The adventures of Meowshmallow and Peppurrmint
 
+![catart](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/810854eb-1641-40e1-a9c4-bec9cb6cbcf2)
+
 Visit the deployed site: https://cat-adventures-05cb08857483.herokuapp.com/
 
 Follow Meowshmallow and Peppurrmint, two inquisitive cats on a quest for the fabled golden fish!
@@ -116,6 +118,40 @@ Here is the commit from my trialling the function:
 This process of iteration worked best for my brain to see what steps I need to take, and solidify my understanding of not passing immutable data
 
 ### Deployment
+
+This project was deployed at [Heroku](https://heroku.com/)
+
+The numbers on the screenshots represent the numbers on the steps of my deployment process.
+
+To deploy this project after creating my account, I:
+
+1. Went to my dashboard and clicked on the New app dropdown menu
+2. Clicked Create new app from the options
+
+![heroku_deployment_step_1-2](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/f5810840-3399-48aa-8944-384850e2f6d9)
+
+3. Named my app in the App name box
+4. Chose a region from the dropdown menu (and accidentally chose United States for this one)
+5. Clicked Create app
+
+![heroku_deployment_step_2-5](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/be20a348-416c-446c-8876-2a33ccb883bb)
+
+Once the app was made I went to my dashboard where I can see my apps. 
+
+6. Clicked on the relevant app
+
+![heroku_deployment_step_6](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/ebe871b8-64df-4c9d-b99a-70055232481b)
+
+7-8. From here, I went to settings, then to the Config Vars. I added the PORT key and a value of 8000. This was a requirement by Code Institute to ensure there were no issues caused by _not_ having it.
+9. I then went to Buildpacks and added Python, and then NodeJS.
+
+![heroku_deployment_step_7-9](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/239b3b7c-432c-4f16-8437-ef5965079b3e)
+
+10. Then I clicked the Deploy tab. Here I connected my GitHub account with the repository the deployment is to select.
+11. After that, I chose to manually deploy my project as needed, but it's possible to set up automatic deployments if preferred.
+
+![heroku_deployment_step_10-11](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/4632f3e9-ed0a-428b-aee0-b7c1f42eef55)
+
 
 
 ### Local Development
