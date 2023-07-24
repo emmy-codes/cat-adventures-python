@@ -220,6 +220,7 @@ $ of the golden fish live on in their hearts.                                $
 $ -------------------------------------------------------------------------- $
 """
 
+
 def get_user_name():
     """
         gets user input username
@@ -230,21 +231,23 @@ def get_user_name():
 
 def preserve_game_screen_size():
     """
-        checks the length of the name variable and adjusts 
+        checks the length of the name variable and adjusts
         the game screen length
     """
     game_screen_start = """
 $ Welcome, """
     name = get_user_name()
-    game_screen_end = """, to the adventures of                              $"""
+    game_screen_end = ", to the adventures of                                $"
     game_screen_end += """
 $ Meowshmallow and Peppurrmint,                                              $
 """
-    calculating = 53 - len(name) + len(game_screen_start)
+    middle_text = ", to the adventures of"
+    calculating = 77 - (len(name)+len(game_screen_start)+len(middle_text))
     white_space = [" " for _ in range(calculating)]
     adjust_game_screen_end = "".join(white_space)
     adjust_game_screen_end += " $"
-    game_screen_with_name = game_screen_start + name + adjust_game_screen_end
+    game_screen_with_name = f"""
+{game_screen_start}{name}{middle_text}{adjust_game_screen_end}"""
 
     if len(name) < 6:
         print("placeholder text until other parameters are working")
@@ -252,6 +255,7 @@ $ Meowshmallow and Peppurrmint,                                              $
         print(f"""
 $ -------------------------------------------------------------------------- $
         {game_screen_with_name}
+$ Meowshmallow and Peppurrmint,                                              $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
@@ -261,6 +265,7 @@ $ -------------------------------------------------------------------------- $
         print(f"""
 $ -------------------------------------------------------------------------- $
         {game_screen_with_name}
+$ Meowshmallow and Peppurrmint,                                              $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
 $ Are you ready to start the game?                                           $
