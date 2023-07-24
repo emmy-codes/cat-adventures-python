@@ -267,8 +267,6 @@ $ -------------------------------------------------------------------------- $
 $ Meowshmallow and Peppurrmint,                                              $
 $ two very curious cats that are on a mission!                               $
 $ -------------------------------------------------------------------------- $
-$ Are you ready to start the game?                                           $
-$ -------------------------------------------------------------------------- $
 """)
     elif len(name) > 32:
         print("""Oh dear, your name seems to be a bit long! Do you have
@@ -279,7 +277,9 @@ a shorter nickname you could try?""")
 
 def start_game():
     """
-        starting the game
+        Starting the game, user is asked to input their name and then 
+        the name is printed to the console. User is then asked to
+        start the game
     """
     print(CAT_ASCII) # prints cat art to the top of the game screen
     print("""
@@ -289,6 +289,11 @@ $ And who might be guiding our furry protagonists on their quest today?      $
 $ -------------------------------------------------------------------------- $
 """)
     preserve_game_screen_size()
+    print("""
+$ -------------------------------------------------------------------------- $
+$ Are you ready to start the game?                                           $
+$ -------------------------------------------------------------------------- $
+""")
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
@@ -296,15 +301,11 @@ $ -------------------------------------------------------------------------- $
         while game_time != "1":
             print("""
 $ -------------------------------------------------------------------------- $
-$ Are you sure? Let's take the kitties on an adventure!                      $
+$ Really? Don't you want to take the kitties on an adventure?                $
 $ -------------------------------------------------------------------------- $
 """)
             game_time = input("Type 1 for yes, or 2 for no: ")
         show_step(game_text["step_1"])
-    else:
-        print("""
-That's not a valid command,
-please enter number 1 or 2 to continue""")
 
 
 def restart_game():
