@@ -156,6 +156,8 @@ To my classmate [Ben](https://github.com/caketaster/PP3--CYOA/blob/main/run.py) 
 
 ### Code Used
 
+ASCII art taken from [ASCII art](https://www.asciiart.eu/animals/cats) but it's unclear who the actual owner is as it's displayed identically on multiple sites. I adjusted it to have two cats for the purpose of my story.
+
 ### Content
 
 I have used [OpenAI](https://chat.openai.com/) to create most of the text for me so I can focus my time on practicing with the code. "We" had a little chat and went over some iterations and I'm happy that it was able to work out the structure for continuing the game, and then I was able to build the flow chart and thus work on the code structure from there.
