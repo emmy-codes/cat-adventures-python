@@ -245,7 +245,7 @@ def get_user_name():
     """
         Gets user input username
     """
-    name = input("Name: ")
+    name = input(" Name: ")
     return name
 
 
@@ -300,7 +300,7 @@ def start_game():
  $ ------------------------------------------------------------------------- $
 """)
     preserve_game_screen_size()
-    game_time = input("Type 1 for yes, or 2 for no: ")
+    game_time = input(" Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
     else:
@@ -311,7 +311,7 @@ def start_game():
  $ (please enter 1 in order to start the game)                               $
  $ ------------------------------------------------------------------------- $
 """)
-            game_time = input("Type 1 for yes, or 2 for no: ")
+            game_time = input(" Type 1 for yes, or 2 for no: ")
             if game_time == "1":
                 show_step(game_text["step_1"])
                 break
@@ -344,10 +344,10 @@ def show_step(step):
     # exit out of the show_step fn
 
     print(step["step_text"])
-    user_input = input("Write your choice (either 1 or 2): ")
+    user_input = input(" Write your choice (either 1 or 2): ")
 
     while user_input not in ("1", "2"):
-        user_input = input("Write your choice (either 1 or 2): ")
+        user_input = input(" Write your choice (either 1 or 2): ")
     if user_input == "1":
         show_step(game_text[step["option_1"]])
     elif user_input == "2":
