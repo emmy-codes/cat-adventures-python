@@ -29,6 +29,7 @@ game_text = {
  $ As they set out on their journey, they come across two possible paths:    $
  $ Option 1: Do they follow the river upstream?                              $
  $ Option 2: Or do they venture into the dense forest?                       $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_2",
             "option_2": "step_3",
@@ -46,6 +47,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they ask the turtle for guidance?                            $
  $ Option 2: Or do they continue without the turtle's help?                  $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_4",
             "option_2": "step_5",
@@ -62,6 +64,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they trust the squirrel and follow its directions?           $
  $ Option 2: Or do they doubt the squirrel and find their own way?           $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_6",
             "option_2": "step_7",
@@ -77,6 +80,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_8",
             "option_2": "step_9",
@@ -92,6 +96,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_10",
             "option_2": "step_11",
@@ -106,6 +111,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_12",
             "option_2": "step_13",
@@ -121,6 +127,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
+ $ ------------------------------------------------------------------------- $
 """,
             "option_1": "step_14",
             "option_2": "step_15",
@@ -266,6 +273,7 @@ def preserve_game_screen_size():
         {game_screen_with_name}
  $ Meowshmallow and Peppurrmint,                                             $
  $ two very curious cats that are on a mission!                              $
+ $ Are you ready to start the game?                                          $
  $ ------------------------------------------------------------------------- $
 """)
     # If the users input is too long, ask them to try again
@@ -292,11 +300,6 @@ def start_game():
  $ ------------------------------------------------------------------------- $
 """)
     preserve_game_screen_size()
-    print("""
- $ ------------------------------------------------------------------------- $
- $ Are you ready to start the game?                                          $
- $ ------------------------------------------------------------------------- $
-""")
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
         show_step(game_text["step_1"])
