@@ -269,7 +269,7 @@ def preserve_game_screen_size():
 {game_screen_start}{name}{middle_text}{adjust_game_screen_end}"""
 
     if len(name) == 0:
-        print("  Please tell us your name, brave hero!")
+        print(" Please tell us your name, brave hero!")
         preserve_game_screen_size()
     elif len(name) <= 32:
         print(f"""
