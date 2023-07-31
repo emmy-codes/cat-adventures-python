@@ -218,19 +218,19 @@ $ -------------------------------------------------------------------------- $
 
 # End text for success
 ENDING_1 = """
-$ -------------------------------------------------------------------------- $
-$ Meowshmallow and Peppurrmint return home with the golden fish.             $
-$ True to the legend, it provides them with an endless supply of food,       $
-$ and they live happily ever after.                                          $
-$ -------------------------------------------------------------------------- $
+ $ ------------------------------------------------------------------------- $
+ $ Meowshmallow and Peppurrmint return home with the golden fish.            $
+ $ True to the legend, it provides them with an endless supply of food,      $
+ $ and they live happily ever after.                                         $
+ $ ------------------------------------------------------------------------- $
 """
 # End text for failure
 ENDING_2 = """
-$ -------------------------------------------------------------------------- $
-$ Despite their best efforts, Meowshmallow and Peppurrmint never find        $
-$ the golden fish. They return to the farm, but the legend                   $
-$ of the golden fish live on in their hearts.                                $
-$ -------------------------------------------------------------------------- $
+ $ ------------------------------------------------------------------------- $
+ $ Despite their best efforts, Meowshmallow and Peppurrmint never find       $
+ $ the golden fish. They return to the farm, but the legend                  $
+ $ of the golden fish live on in their hearts.                               $
+ $ ------------------------------------------------------------------------- $
 """
 
 
@@ -262,11 +262,11 @@ def preserve_game_screen_size():
         preserve_game_screen_size()
     elif len(name) <= 32:
         print(f"""
-$ -------------------------------------------------------------------------- $
+ $ ------------------------------------------------------------------------- $
         {game_screen_with_name}
-$ Meowshmallow and Peppurrmint,                                              $
-$ two very curious cats that are on a mission!                               $
-$ -------------------------------------------------------------------------- $
+ $ Meowshmallow and Peppurrmint,                                             $
+ $ two very curious cats that are on a mission!                              $
+ $ ------------------------------------------------------------------------- $
 """)
     # If the users input is too long, ask them to try again
     elif len(name) > 32:
@@ -286,16 +286,16 @@ def start_game():
     """
     print(CAT_ASCII) # Prints cat art to the top of the game screen
     print("""
-$ -------------------------------------------------------------------------- $
-$ Hello dear cat wrangler, to your feline text adventure!                    $
-$ And who might be guiding our furry protagonists on their quest today?      $
-$ -------------------------------------------------------------------------- $
+ $ ------------------------------------------------------------------------- $
+ $ Hello dear cat wrangler, to your feline text adventure!                   $
+ $ And who might be guiding our furry protagonists on their quest today?     $
+ $ ------------------------------------------------------------------------- $
 """)
     preserve_game_screen_size()
     print("""
-$ -------------------------------------------------------------------------- $
-$ Are you ready to start the game?                                           $
-$ -------------------------------------------------------------------------- $
+ $ ------------------------------------------------------------------------- $
+ $ Are you ready to start the game?                                          $
+ $ ------------------------------------------------------------------------- $
 """)
     game_time = input("Type 1 for yes, or 2 for no: ")
     if game_time == "1":
@@ -303,10 +303,10 @@ $ -------------------------------------------------------------------------- $
     else:
         while True:
             print("""
-$ -------------------------------------------------------------------------- $
-$ The cats look around, wondering what to do next                            $
-$ (please enter 1 in order to start the game)                                $
-$ -------------------------------------------------------------------------- $
+ $ ------------------------------------------------------------------------- $
+ $ The cats look around, wondering what to do next                           $
+ $ (please enter 1 in order to start the game)                               $
+ $ ------------------------------------------------------------------------- $
 """)
             game_time = input("Type 1 for yes, or 2 for no: ")
             if game_time == "1":
