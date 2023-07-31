@@ -1,5 +1,8 @@
 """
-    The tail of 2 curious kitties on a quest for endless fish
+    The tail of 2 curious kitties on a quest for endless fish! This is a 
+    text-based game following 2 cats as they search for a fabled golden fish. 
+    Guide the cats using the information and prompts provided.
+    Will you help them to succeed?
 """
 
 CAT_ASCII = """
@@ -23,7 +26,7 @@ game_text = {
  $ Our furry-tail begins in a small village with two curious cats named      $
  $ Meowshmallow and Peppurrmint who heard tales of a legendary golden fish.  $
  $ This magical fish was said to provide an endless supply of food           $
- $ to whomever caught it. Intrigued by the story, they decide to embark      $
+ $ to whoever caught it. Intrigued by the story, they decide to embark       $
  $ on an adventure to find this elusive fish.                                $
  $ ------------------------------------------------------------------------- $
  $ As they set out on their journey, they come across two possible paths:    $
@@ -75,8 +78,8 @@ game_text = {
                 """
  $ ------------------------------------------------------------------------- $
  $ With the turtle's guidance, Meowshmallow and Peppurrmint manage           $
- $ to find the hidden lake. As they approache, they notice two different     $
- $ spots they could possibly catch the fish from:                            $
+ $ to find the hidden lake. As they approach, they notice two different      $
+ $ spots they could potentially catch the fish from.                         $
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
@@ -92,7 +95,8 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Meowshmallow and Peppurrmint continue their journey without               $
  $ the turtle's help. They soon find a lake that seems promising.            $
- $ They notice two different spots they could possibly catch the fish from:  $
+ $ They notice two different spots they could potentially                    $
+ $ catch the fish from.                                                      $
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
@@ -123,7 +127,7 @@ game_text = {
  $ ------------------------------------------------------------------------- $
  $ Meowshmallow and Peppurrmint decide not to trust the squirrel and forge   $
  $ their own path. Eventually, they stumble upon a lake. They notice two     $
- $ different spots they could possibly catch the fish from:                  $
+ $ different spots they could potentially catch the fish from.               $
  $ ------------------------------------------------------------------------- $
  $ Option 1: Do they pick the open spot near the water's edge?               $
  $ Option 2: Or do they pick the secluded spot beneath the willow tree?      $
@@ -276,19 +280,19 @@ def preserve_game_screen_size():
  $ Are you ready to start the game?                                          $
  $ ------------------------------------------------------------------------- $
 """)
-    # If the users input is too long, ask them to try again
+    # If the users' input is too long, ask them to try again
     elif len(name) > 32:
-        print("""Oh dear, your name seems to be a bit long! Do you have
-a shorter nickname you could try?""")
+        print(""" Oh dear, your name seems to be a bit long! Do you have
+ a shorter nickname you could try?""")
         preserve_game_screen_size()
     return preserve_game_screen_size
 
 
 def start_game():
     """
-        Starting the game, user is asked to input their name and then 
-        the name is printed to the console. User is then asked to
-        start the game. If user inputs anything other than 1 or 2,
+        Starting the game, the user is asked to input their name and then 
+        the name is printed to the console. The user is then asked to
+        start the game. If the user inputs anything other than 1 or 2,
         the code runs again asking for their name or if they're
         ready to start the game
     """
@@ -308,7 +312,7 @@ def start_game():
             print("""
  $ ------------------------------------------------------------------------- $
  $ The cats look around, wondering what to do next                           $
- $ (please enter 1 in order to start the game)                               $
+ $ (please enter 1 to start the game)                                        $
  $ ------------------------------------------------------------------------- $
 """)
             game_time = input(" Type 1 for yes, or 2 for no: ")
@@ -321,9 +325,9 @@ def restart_game():
         Regardless of success or failure, offer the user an
         option to restart the game
     """
-    restart = input("Would you like to play again? 1 for yes, 2 for no: ")
+    restart = input(" Would you like to play again? 1 for yes, 2 for no: ")
     if restart == "2":
-        print("Thank mew for playing! =^_^=")
+        print(" Thank mew for playing! =^_^=")
     elif restart == "1":
         start_game()
 
