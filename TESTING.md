@@ -14,6 +14,7 @@ Screenshot of validator after final deployment to come.
 | Feature | Expectation | Testing | Result |
 | ------- |:-----------:|:-------:| ------:|
 | 1. Run program | Game ASCII, welcome message and input prompt show | Ran program | All showing correctly |
+| 1a. Game visual | Text window should look a little more fun than pure text by the use of spacing, positioning, hyphenation and use of $ sign | Checked each flow and added/adjusted as necessary | Looking good after adjustments | 
 | 2. Enter no name | Add nothing to name input when prompted, receive an error message | Hit enter instead of writing anything | Received error message and a prompt to input a name again |
 | 3. Enter a very long name | Enter a name that is too long to fit the game text and stay below 80 characters and receive an error message | Added a name I had hoped to copy paste but ended up stubbornly typing anyway 😂 | Received error message and prompt to input another name |
 | 4. Enter a name correctly | Enter chosen name and it will be printed back to the user along with a message and another input to trigger the start of the game | Input a name when prompted | Name was printed along with a message to start the game |
@@ -22,11 +23,10 @@ Screenshot of validator after final deployment to come.
 | 7. Game input steps | Each step of the game, inputting nothing should prompt the user to try again and provide input box | Hit enter on input box for every step | User is prompted to try again |
 | 8. Game input steps | Each step of the game, inputting something longer than 80 characters should prompt the user to try again and provide an input box | Entered a long character string on each step | User is prompted to try again |
 | 9. Game input correctly | Writing 1 or 2 on each step of the ame correctly takes the user to the next step of the game which prints a new game message and provides an input box | Try both 1 and 2 on each step to ensure game is following the flow on lucid charts correctly | Inputting 1 or 2 for every step of the game correctly takes the user to the next step |
+| 10. 
 
 
 
-| Story flow | All story steps flow correctly (can get to the end of the game, either succeding or failing, by taking the options available) | I trialled every single option using my flow diagram, checking each option led to the right next step and correctly reached the end of the game by succeeding or failing. | All steps flow as planned |
-| Game visual | Text window should look a little more fun than pure text by the use of spacing, positioning, hyphenation and use of $ sign | Checked each flow and added/adjusted as necessary | Looking good after adjustments | 
 |  |  |  |  |
 
 1: Run program: 
@@ -48,3 +48,5 @@ Screenshot of validator after final deployment to come.
 7,8,9: Input nothing, then a long character string, then the correct input of 1 or 2:
 
 ![test789](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/5a7ed353-e188-420e-a89c-721efc3669da)
+
+10: 
