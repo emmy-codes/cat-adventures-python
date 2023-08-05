@@ -19,7 +19,7 @@ I really wanted to make a text based game for this project, being old enough to 
   * [Features](#features)
 
 * [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
+  * [Language Used](#language-used)
   * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 * [Deployment & Local Development](#deployment--local-development)
@@ -68,6 +68,8 @@ The design is structural in nature as opposed to visual, as although I know the 
 ### Flowchart
 
 Since the game changes depending on the users' choices, I wanted to lay out the step by step logic needed to reach each ending of the game. Although there are only two outcomes there are multiple ways to get there.
+
+The link to Lucidcharts can be found [here](https://lucid.app/lucidchart/61e9461d-0d8e-4266-89c2-d76eccc03e25/edit?viewport_loc=-1550%2C-1746%2C2200%2C2270%2C0_0&invitationId=inv_bbcdbbb9-6f50-4cc3-8962-d0253276f94b)
 
 ![rsz_11blank_diagram](https://github.com/emmy-codes/python-text-game/assets/70635859/23e3c5e3-951d-4083-af31-c40eeb56e421)
 
