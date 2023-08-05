@@ -309,12 +309,6 @@ def start_game():
         show_step(game_text["step_1"])
     else:
         while True:
-            print("""
- $ ------------------------------------------------------------------------- $
- $ The cats look around, wondering what to do next                           $
- $ (please enter 1 to start the game)                                        $
- $ ------------------------------------------------------------------------- $
-""")
             game_time = input(" Type 1 for yes, or 2 for no: ")
             if game_time == "1":
                 show_step(game_text["step_1"])
