@@ -309,7 +309,7 @@ def start_game():
         show_step(game_text["step_1"])
     else:
         while True:
-            game_time = input(" Type 1 for yes, or 2 for no: ")
+            game_time = input(" Type 1 to start the game: ")
             if game_time == "1":
                 show_step(game_text["step_1"])
                 break
