@@ -1,6 +1,7 @@
 # The adventures of Meowshmallow and Peppurrmint
 
-![catart](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/810854eb-1641-40e1-a9c4-bec9cb6cbcf2)
+![Python-Terminal-by-Code-Institute](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/5b01d5f2-c582-4cb2-a5e3-6edf03325638)
+
 
 Visit the deployed site: https://cat-adventures-05cb08857483.herokuapp.com/
 
@@ -9,6 +10,8 @@ Follow Meowshmallow and Peppurrmint, two inquisitive cats on a quest for the fab
 I really wanted to make a text based game for this project, being old enough to hark from the era of text based MUDs and other old geekery. My dream is to make a fully interactive game, with items to pick up and use, and squares that the user can navigate around much like the games of yonder year.
 
 ## CONTENTS
+
+* [Happy Path Through Game](happy-path-through-game)
 
 * [User Stories](#user-stories)
    * [MVP](#mvp)
@@ -38,6 +41,11 @@ I really wanted to make a text based game for this project, being old enough to 
   * [Acknowledgments](#acknowledgments)
 
 - - -
+
+## Happy Path Through Game
+
+For testing purposes, one of the paths for succeeding is simply by inputting 1 for each option.
+In order to get to the unsucessful ending, input 1, 1, 2 in that order.
 
 ## User Stories
 
