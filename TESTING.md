@@ -56,8 +56,8 @@ For testing purposes, one of the paths for succeeding is simply by inputting 1 f
 
 11: End game success:
 
-![step11](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/c1518e18-9df9-46fc-96fb-ebda85c97fdb)
+![test11](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/801c5b50-f3a0-4bcf-b462-33a03f28d252)
 
 12: End game no sucess:
 
-
+![test12](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/c3825307-f09b-40a4-98d1-944e01d5d528)
