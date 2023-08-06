@@ -3,15 +3,26 @@
 ## CONTENTS
 
 * [CI Pep8 Validator](#ci-pep8-validator)
+* [User Testing](#user-testing)
 * [Manual Testing](#manual-testing)
 
 ### CI Pep8 Validator
 
-Screenshot of validator after final deployment to come.
+I chose not to include the ASCII art into the linter as that has inconsistencies, but as it has no effect on the game, as well as being within the 80 character length limit I have omitted it from the validator. Otherwise, all comes back fine!
+
+![ci-python-linter](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/42b476bd-eeeb-41e6-9ed1-dd2052b7bb73)
+
+
+### User Testing
+
+I asked my friends and family on Facebook to try my game and received some points to fix, and good feedback!
+
+![facebook-user-testing](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/2abca620-f339-4d69-8cb2-132e2e044e23)
+
 
 ### Manual testing:
 
-For testing purposes, one of the paths for succeeding is simply by inputting 1 for each option.
+For testing purposes, one of the paths for succeeding is simply by inputting 1 for each option. In order to get to the unsucessful ending, input 1, 1, 2 in that order.
 
 | Feature | Expectation | Testing | Result |
 | ------- |:-----------:|:-------:| ------:|
