@@ -290,13 +290,13 @@ def preserve_game_screen_size():
 
 def start_game():
     """
-        Starting the game, the user is asked to input their name and then 
+        Starting the game, the user is asked to input their name and then
         the name is printed to the console. The user is then asked to
         start the game. If the user inputs anything other than 1 or 2,
         the code runs again asking for their name or if they're
         ready to start the game
     """
-    print(CAT_ASCII) # Prints cat art to the top of the game screen
+    print(CAT_ASCII)  # Prints cat art to the top of the game screen
     print("""
  $ ------------------------------------------------------------------------- $
  $ Hello dear cat wrangler, to your feline text adventure!                   $
@@ -313,6 +313,7 @@ def start_game():
             if game_time == "1":
                 show_step(game_text["step_1"])
                 break
+
 
 def restart_game():
     """
@@ -350,5 +351,6 @@ def show_step(step):
         show_step(game_text[step["option_1"]])
     elif user_input == "2":
         show_step(game_text[step["option_2"]])
+
 
 start_game()
