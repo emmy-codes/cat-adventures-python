@@ -172,9 +172,33 @@ Once the app was made I went to my dashboard where I can see my apps.
 
 #### How to Fork
 
+Should you wish to fork this repo, here is a guide on how to do that:
+
+Firstly, go to https://github.com/emmy-codes/cat-adventures-python
+
+1. On the main repo page, click the Fork button near the top right corner
+
+![fork-cat-adventures](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/de5cbb89-8713-4b0d-b8d5-4a03c788a41e)
+
+2. On the create a fork page, check the Owner of the repo is set to the Github org you wish to use, and change the name of the repo if you wish.
+2a: Add a description if you want to
+3. Check the box here if you want to make a copy of the main branch or multiple branches (main is selected by default)
+4. Create the fork
+
+* Screenshot from an old project as I cannot fork my Python project due to not having any organizations connected to my account, and presumably because this repo is already a fork of the CI template
+
+![fork-screenshot](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/5980e69e-843a-4f08-ba14-e9c250838d58)
+
 
 #### How to Clone
 
+For cloning the repo you will need:
+
+* The [repo](https://github.com/emmy-codes/cat-adventures-python) open
+* Your IDE of choice
+
+1. On the repo page, click on the green "Code" button
+2. On the dropdown from the Code button, click on your chosen key (pictured here is SSH)
 
 - - -
 
