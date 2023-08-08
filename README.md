@@ -11,7 +11,7 @@ I really wanted to make a text based game for this project, being old enough to 
 
 ## CONTENTS
 
-* [Happy Path Through Game](happy-path-through-game)
+* [Happy Path Through Game](#happy-path-through-game)
 
 * [User Stories](#user-stories)
    * [MVP](#mvp)
