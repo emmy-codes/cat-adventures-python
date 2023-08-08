@@ -85,7 +85,7 @@ A link to the chart can be found [here](https://lucid.app/lucidchart/35555ee2-20
 
 ![input_validation](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/8b4928c6-6062-4822-8688-05a053e96f30)
 
-The flow of the game has 8 possible outcomes, 4 successful adventures, and 4 unsucessful. Below is a basic map of the journey which can be followed to see all alternatives and their outcomes. A link to the Lucidchart can be found [here](https://lucid.app/lucidchart/61e9461d-0d8e-4266-89c2-d76eccc03e25/edit?viewport_loc=-1550%2C-1746%2C2200%2C2270%2C0_0&invitationId=inv_bbcdbbb9-6f50-4cc3-8962-d0253276f94b)
+The flow of the game has 8 possible outcomes, 4 successful adventures, and 4 unsucessful. Below is a basic map of the journey which can be followed to see all alternatives and their outcomes. A link to the Lucidchart can be found [here](https://lucid.app/lucidchart/61e9461d-0d8e-4266-89c2-d76eccc03e25/edit?viewport_loc=-1550%2C-1746%2C2200%2C2270%2C0_0&invitationId=inv_bbcdbbb9-6f50-4cc3-8962-d0253276f94b) The screenshot is below:
 
 ![pp3_game_step_flow](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/1ffe4a06-2c0b-4af7-858e-186a75102845)
 
@@ -100,7 +100,9 @@ The user is then taken through a journey with explanation texts and requests for
 
 ![game choices](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/358dd113-b1b4-45cc-b483-6e7e4597239d)
 
-At the end of the user's journey they are presented with a final text depending on their success or not in catching the required object to "win", and are offered to run through the game from the start if they choose.
+At the end of the user's journey they are presented with a final text depending on their success or not in catching the required object to "win".
+
+At the end of the game the users are offered to run through the game from the start if they choose.
 
 Not succeeding:
 
