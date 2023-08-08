@@ -92,8 +92,23 @@ The flow of the game has 8 possible outcomes, 4 successful adventures, and 4 uns
 
 ### Features
 
-![game-screenshot](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/3ed5b87f-e8a2-48e8-97e2-2db287d2d230)
+The user can add a name of their choosing to give them a personalised welcome to the game:
 
+![game screenshot](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/39dfd09b-d13b-4ff4-8320-9aa58cab3630)
+
+The user is then taken through a journey with explanation texts and requests for the user to choose which path they want to take. Choosing different paths can lead to different outcomes.
+
+![game choices](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/358dd113-b1b4-45cc-b483-6e7e4597239d)
+
+At the end of the user's journey they are presented with a final text depending on their success or not in catching the required object to "win", and are offered to run through the game from the start if they choose.
+
+Not succeeding:
+
+![game not successful](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/a32df8e2-7ff2-40da-99f6-88bb2277aefe)
+
+Succeeding:
+
+![game successful](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/b4e8e1c9-8944-4158-8c20-869d387e0f66)
 
 
 - - -
