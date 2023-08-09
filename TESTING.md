@@ -49,7 +49,7 @@ For testing purposes, one of the paths for succeeding is simply by inputting 1 f
 
 ![test234](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/eba772d3-f071-4805-8854-efbbddafaf11)
 
-5: Start game: 
+5: Start game incorrectly: 
 
 ![test5](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/26c923b5-e7f0-47a0-87c3-d591751b36e3)
 
