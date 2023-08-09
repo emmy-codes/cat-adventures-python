@@ -81,14 +81,9 @@ Since the game changes depending on the users' choices, I wanted to lay out the 
 
 For each step, regardless of whether it's inputting the name, choosing an option through the game, or restarting again, the flow is the same. The user recieves a prompt, selects an input, the input is cross-checked against the code for valid input, and if the user input is invalid, they are prompted again to input on the same step. Once a valid input is received, the user goes on to the next step.
 
-A link to the chart can be found [here](https://lucid.app/lucidchart/35555ee2-206f-4931-afa0-36d1a2a83594/edit?invitationId=inv_48fd8407-1cb4-4a73-831d-439ac0ddaceb&page=0_0#) The screenshot is below:
-
-![input_validation](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/8b4928c6-6062-4822-8688-05a053e96f30)
-
 The flow of the game has 8 possible outcomes, 4 successful adventures, and 4 unsucessful. Below is a basic map of the journey which can be followed to see all alternatives and their outcomes. A link to the Lucidchart can be found [here](https://lucid.app/lucidchart/61e9461d-0d8e-4266-89c2-d76eccc03e25/edit?viewport_loc=-1550%2C-1746%2C2200%2C2270%2C0_0&invitationId=inv_bbcdbbb9-6f50-4cc3-8962-d0253276f94b) The screenshot is below:
 
-![pp3_game_step_flow](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/1ffe4a06-2c0b-4af7-858e-186a75102845)
-
+![pp3_game_step_flow_3](https://github.com/emmy-codes/cat-adventures-python/assets/70635859/be5ac518-3cec-4104-a6e9-7347905b45e2)
 
 ### Features
 
